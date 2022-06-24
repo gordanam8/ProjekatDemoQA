@@ -90,7 +90,7 @@ public class TestWidgets extends BaseTest {
 
         Actions actions = new Actions(driver);
 
-        //Move mouse to x offset 50 i.e. in horizontal direction
+        //Move mouse to x offset 50 in horizontal direction
         actions.moveToElement(sliderPage.getSlider(),50,0).perform();
         sliderPage.getSlider().click();
         System.out.println("Moved slider in horizontal directions");
@@ -281,6 +281,7 @@ public class TestWidgets extends BaseTest {
 
     @Test
     public void testingToolTips() {
+        //not finished
 
         // Go to page
         homePage.clickWidgets();
@@ -293,6 +294,7 @@ public class TestWidgets extends BaseTest {
 
         //mouse hover on hoverButton
         actions.moveToElement(toolTipsPage.getHoverButtoon()).perform();
+        String tooltipText = toolTipsPage.getHoverButtoon().getAttribute("buttonToolTip");
 
         //mouse hover on hoverButton
         actions.moveToElement(toolTipsPage.getHoverTextField()).perform();
