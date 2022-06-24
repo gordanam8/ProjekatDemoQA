@@ -32,9 +32,9 @@ public class TestInteractions extends BaseTest {
         String textTo = droppablePage.getTarget().getText();
 
         if(textTo.equals("Dropped!")) {
-            System.out.println("PASS: Source is dropped to target as expected");
+            System.out.println("Source is dropped to target as expected");
         }else {
-            System.out.println("FAIL: Source couldn't be dropped to target as expected");
+            System.out.println("Source couldn't be dropped to target as expected");
         }
 
     }
