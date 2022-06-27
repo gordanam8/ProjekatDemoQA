@@ -24,7 +24,7 @@ public class TestElements extends BaseTest {
         driver.get(homePageURL);
     }
 
-    @Test
+    @Test(priority = 10)
     public void successfulSubmitDataIntoTextBox() {
 
         // Go to page
@@ -70,7 +70,7 @@ public class TestElements extends BaseTest {
     }
 
 
-    @Test
+    @Test(priority = 20)
     public void validationOfTheRadioButtons() throws InterruptedException {
 
         // Go to page
@@ -111,7 +111,7 @@ public class TestElements extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 30)
     public void addNewRecordWebTables() {
 
         // Go to page
@@ -151,7 +151,7 @@ public class TestElements extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 40)
     public void editRecordWebTables() {
         // Go to page
         homePage.clickElements();
@@ -193,7 +193,7 @@ public class TestElements extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 50)
     public void deleteRecordWebTables() {
         // Go to page
         homePage.clickElements();
@@ -233,7 +233,7 @@ public class TestElements extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 60)
     public void testButtons() throws InterruptedException {
 
         // Go to page
@@ -258,7 +258,7 @@ public class TestElements extends BaseTest {
         Assert.assertTrue(expMessage.equals(buttonsPage.getMessageDynamicClick().getText()));
     }
 
-    @Test
+    @Test(priority = 70)
     public void testingSimpleAndDynamicLinks() throws InterruptedException {
 
         // Go to page
@@ -286,7 +286,7 @@ public class TestElements extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 80)
     public void testingThatLinkWillSendAnApiCallAndVerifyTheHttpResponseCode() throws InterruptedException {
         // Go to page
         homePage.clickElements();
@@ -353,7 +353,7 @@ public class TestElements extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 90)
     public void testingDynamicProperties() {
 
         // Go to page
@@ -398,7 +398,7 @@ public class TestElements extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 100)
     public void clickOnValidAndBrokenLink() throws InterruptedException {
 
         // Go to page
@@ -440,7 +440,7 @@ public class TestElements extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 110)
     public void testingBrokenImage() {
 
         // Go to page
@@ -478,7 +478,7 @@ public class TestElements extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 120)
     public void downloadFile() throws InterruptedException {
         File f = new File("C:\\Users\\neman\\Downloads\\sampleFile.jpeg");
 
@@ -503,7 +503,7 @@ public class TestElements extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 130)
     public void uploadFile() throws InterruptedException {
 
         // Go to page
@@ -523,7 +523,7 @@ public class TestElements extends BaseTest {
     }
 
 
-    @Test
+    @Test(priority = 140)
     public void testingCheckBox() throws InterruptedException {
 
         // Go to page

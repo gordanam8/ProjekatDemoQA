@@ -23,7 +23,7 @@ public class TestAlertsFrameWindows extends BaseTest {
         driver.get(homePageURL);
     }
 
-    @Test
+    @Test(priority = 10)
     public void openingNewTabAndFetchNewTabHeading()  {
 
         // Go to page
@@ -67,7 +67,7 @@ public class TestAlertsFrameWindows extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 20)
     public void testingNewWindowAndNewWindowMessage() throws InterruptedException {
 
         // Go to page
@@ -103,7 +103,7 @@ public class TestAlertsFrameWindows extends BaseTest {
         driver.switchTo().window(originalHandle);
     }
 
-    @Test
+    @Test(priority = 30)
     public void acceptSimpleAlerts() throws InterruptedException {
         // Go to page
         homePage.clickAlerts();
@@ -118,7 +118,7 @@ public class TestAlertsFrameWindows extends BaseTest {
         simpleAlert.accept();
     }
 
-    @Test
+    @Test(priority = 40)
     public void acceptTimerAlerts() throws InterruptedException {
 
         // Go to page
@@ -141,7 +141,7 @@ public class TestAlertsFrameWindows extends BaseTest {
         }
     }
 
-    @Test
+    @Test(priority = 50)
     public void confirmAlertMessageBox() throws InterruptedException {
 
         // Go to page
@@ -160,7 +160,7 @@ public class TestAlertsFrameWindows extends BaseTest {
         confirmationAlert.accept();
     }
 
-    @Test
+    @Test(priority = 60)
     public void dismissAlertMessageBox() throws InterruptedException {
 
         // Go to page
@@ -179,7 +179,7 @@ public class TestAlertsFrameWindows extends BaseTest {
         confirmationAlert.dismiss();
     }
 
-    @Test
+    @Test(priority = 70)
     public void promptAlertBoxSendTextAndAccept() throws InterruptedException {
 
         // Go to page
@@ -200,7 +200,7 @@ public class TestAlertsFrameWindows extends BaseTest {
         promptAlert.accept();
     }
 
-    @Test
+    @Test(priority = 80)
     public void switchingBetweenFrames() throws InterruptedException {
 
         // Go to page
@@ -224,7 +224,7 @@ public class TestAlertsFrameWindows extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 90)
     public void numberOfFrames() {
 
         // Go to page
@@ -243,7 +243,7 @@ public class TestAlertsFrameWindows extends BaseTest {
         driver.switchTo().frame(0);
     }
 
-    @Test
+    @Test(priority = 100)
     public void testingNestedFramesAndSwitchToChildFrame() {
 
         // Go to page
@@ -270,7 +270,7 @@ public class TestAlertsFrameWindows extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 110)
     public void switchingBetweenNestedFramesParentAndChild() {
 
         // Go to page
@@ -305,7 +305,7 @@ public class TestAlertsFrameWindows extends BaseTest {
         System.out.println("Frame1 is :" + frame1Text);
     }
 
-    @Test
+    @Test(priority = 120)
     public void testingSmallModalDialogBox() {
 
         // Go to page
@@ -327,7 +327,7 @@ public class TestAlertsFrameWindows extends BaseTest {
         modalDialogsPage.clickOnCloseSmallModal();
     }
 
-    @Test
+    @Test(priority = 130)
     public void testingLargeModalDialogBox() {
 
         // Go to page

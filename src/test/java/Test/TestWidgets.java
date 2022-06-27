@@ -27,7 +27,7 @@ public class TestWidgets extends BaseTest {
     }
 
 
-    @Test
+    @Test(priority = 10)
     public void testingAccordionCollapse() throws InterruptedException {
 
         // Go to page
@@ -77,7 +77,7 @@ public class TestWidgets extends BaseTest {
     }
 
 
-    @Test
+    @Test(priority = 20)
     public void testingSlider() throws InterruptedException {
 
         // Go to page
@@ -100,7 +100,7 @@ public class TestWidgets extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 30)
     public void testingProgressBar() throws InterruptedException {
 
         // Go to page
@@ -121,7 +121,7 @@ public class TestWidgets extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 40)
     public void testingMenu() {
 
         // Go to page
@@ -168,7 +168,7 @@ public class TestWidgets extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 50)
     public void testingOldStyleSelectMenu() {
 
         // Go to page
@@ -211,7 +211,7 @@ public class TestWidgets extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 60)
     public void testingStandardMultiSelect() {
 
         // Go to page
@@ -279,7 +279,7 @@ public class TestWidgets extends BaseTest {
     }
 
 
-    @Test
+    @Test(priority = 70)
     public void testingToolTips() {
         //not finished
 

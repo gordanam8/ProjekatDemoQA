@@ -16,7 +16,7 @@ public class TestInteractions extends BaseTest {
         driver.get(homePageURL);
     }
 
-    @Test
+    @Test(priority = 10)
     public void testingSimpleDragAndDrop() {
 
         // Go to page
