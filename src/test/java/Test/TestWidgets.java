@@ -281,7 +281,7 @@ public class TestWidgets extends BaseTest {
 
     @Test(priority = 70)
     public void testingToolTips() {
-        //not finished
+
 
         // Go to page
         homePage.clickWidgets();
